@@ -1,11 +1,12 @@
 {
   "functions": {
     "api/*.php": {
-      "runtime": "vercel-php@0.5.2",
-      "excludeFiles": "public/**"
+      "runtime": "vercel-php@0.5.2"
     }
   },
-  "routes": [
-    { "src": "/(.*)",  "dest": "/public/index.php" }
-  ]
+  "functions": {
+    "public/*.php": {
+      "runtime": "vercel-php@0.5.2"
+    }
+  }
 }
